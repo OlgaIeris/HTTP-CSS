@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Lesson 3</title>
+        <style>
+            .box {
+                background-color: #d0dbd2;    
+            }
+        </style>
+    </head>
+<body>
+    <form>
+        <fieldset>
+            <div class="box">
+                <legend>Контактная информация</legend>
+                <p><label for="name">NAME</label> <input type="text" name="name" required></p>
+                <p><label for="email">E-mail</label><input type="email" name="email" placeholder="name@example.com" required></p>
+                <p><label for="phone">PHONE</label><input type="tel" name="phone" placeholder="xxx-xxx-xx-xx" 
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required></p>       
+                <div>
+                    <label for="select">YOUR CITY</label>
+                    <select>
+                        <option>Dnipro</option>
+                        <option>Kyiv</option>
+                        <option>Kharkiv</option>
+                        <option>Lviv</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+            </div>
+        </fieldset>
+            <p>
+                <input type="submit" value="OK">
+                <input type="reset" value="EXIT">
+            </p>
+    </form>   
+</body>
+</html>
